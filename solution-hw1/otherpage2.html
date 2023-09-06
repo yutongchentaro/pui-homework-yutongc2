@@ -17,63 +17,56 @@
 
     <nav>
       <!--product header-->
-      <div id="products_click">
+      <div class="nav_click">
         <a href="./index.html">
           <h4 id="prod">PRODUCTS</h4>
         </a>
       </div>
 
       <!--cart header-->
-      <div id="cart_click">
+      <div class="nav_click">
         <a href="./otherpage2.html">
           <h4 id="cart">CART</h4>
         </a>
       </div>
     </nav>
 
-    <h4 id="scart">Shopping Cart</h4>
+    <div class="mainContent">
+      <span class="largeText">Shopping Cart</span>
 
-    <div id="ori">
-      <img src="../assets/products/original-cinnamon-roll.jpg"
+      <div class="cart_item">
+        <img src="../assets/products/original-cinnamon-roll.jpg"
+          width="200"
+          height="200"
+          alt="original-cinnamon-roll" />
+        <br>
+        <span>Remove</span>
+        <p>Original Cinnamon Roll <br> Glazing: Keep original <br> Pack Size:1</p>       
+        <br>
+        <span class="largeText">$2.49</span>
+      </div>
+
+      <br>
+
+      <div class="cart_item">
+        <img src="../assets/products/double-chocolate-cinnamon-roll.jpg"
         width="200"
         height="200"
-        alt="original-cinnamon-roll" />
-      <br>
+        alt="double-chocolate-cinnamon-roll" />
+        <br>
+        <span>Remove</span>
+        <p>Double Chocolate Cinnamon Roll <br> Glazing: Sugar milk <br> Pack Size:6</p>     
+        <br>
+        <span class="largeText">$27.45</span>       
+      </div>
 
-      <span>Remove</span>
+      <hr id="shorthr"/>
 
-      <p>Original Cinnamon Roll <br> Glazing: Keep original <br> Pack Size:1</p>
-      
-      <br>
-
-      <span id="2.49">$2.49</span>
-
-    </div>
-
-
-    <div id="choc">
-      <img src="../assets/products/double-chocolate-cinnamon-roll.jpg"
-      width="200"
-      height="200"
-      alt="double-chocolate-cinnamon-roll" />
-      <br>
-
-      <span>Remove</span>
-
-      <p>Double Chocolate Cinnamon Roll <br> Glazing: Sugar milk <br> Pack Size:6</p>
-      
-      <br>
-
-      <span id="27.45">$27.45</span>
-        
-    </div>
-
-    <hr id="shorthr"/>
-
-    <div id="checkout">
-      <span>Total:$29.94</span>
-      <br>
-      <button type="button">Checkout</button>
+      <div id="checkout">
+        <span class="largeText">Total:$29.94</span>
+        <br>
+        <button class="btn" type="button">Checkout</button>
+      </div>
     </div>
 
 

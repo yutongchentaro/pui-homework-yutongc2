@@ -2,10 +2,43 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;  
 }
 
+#logo {
+    border-width: 0;
+}
 
-h4 {
-    text-align: center;
+h4 { /* all titles*/
+    font-size: 32px;
     font-weight: normal;
+}
+
+nav {
+    color:black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.mainContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.largeText {
+    font-weight: normal;
+    font-size: 32px;
+}
+#detail_img {
+    margin-top: 40px;
+}
+
+#glazin, #packs { /*dropdown*/
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 15px;
+    width: 180px;
 }
 
 hr {
@@ -15,19 +48,57 @@ hr {
 
 }
 
+#shorthr {
+    width: 50%;
+}
+
 img {
     border: 2px solid black;
 }
 
-#logo {
-    border-width: 0;
+.product {
+    padding: 10px ;
+    margin: 10px;
+}
+.product:hover {
+    background-color: yellow;
+    font-weight: bold;
 }
 
-#Original, #Apple, #Raisin, #Walnut, #Double, #Strawberry {
-    margin: auto;
-    width: 30% /* how to center the elements */
+.product p {
+    font-weight: 100;
 }
 
-/* .Original {
-    margin: 100px, auto;
-} */
+.btn {
+    border-color: black;
+    background-color: white;
+    border:solid;
+    border-radius: 0.5px ;
+    padding: 5px 20px;
+    margin: 15px;
+    box-sizing: border-box;
+    width: 120px;
+}
+
+.btn:hover {
+    background-color: yellow;
+    font-weight: bold; /* mess up*/
+}
+
+.nav_click a {
+    text-decoration: none;
+}
+
+nav h4, .click a {
+    color: black;
+}
+
+nav h4:hover {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.cart_item{
+    text-align: center;
+    margin-top: 40px;
+}
