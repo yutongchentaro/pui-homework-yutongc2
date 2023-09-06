@@ -1,0 +1,29 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+
+h4 {
+    text-align: center;
+    font-weight: normal;
+}
+
+hr {
+    height: 1px;
+    border: solid;
+    background: black;
+
+}
+
+img {
+    border: 1.5px solid black;
+}
+
+#logo {
+    border-width: 0;
+}
+
+#Original, #Apple, #Raisin, #Walnut, #Double, #Strawberry {
+    margin: auto;
+    width: 30% /* how to center the elements */
+}
