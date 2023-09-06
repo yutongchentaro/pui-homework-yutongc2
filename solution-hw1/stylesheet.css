@@ -10,6 +10,9 @@ h4 { /* all titles*/
     font-size: 32px;
     font-weight: normal;
 }
+span, p {
+    font-size: 24px;
+}
 
 nav {
     color:black;
@@ -28,18 +31,54 @@ nav {
 .largeText {
     font-weight: normal;
     font-size: 32px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+
 }
 #detail_img {
     margin-top: 40px;
 }
 
+#detail_content {
+    margin: 20px;
+    width: 360px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#detail_choice {
+    float: right;
+}
+
+.dropdown {
+    font-size: 24px;
+}
+
 #glazin, #packs { /*dropdown*/
+    font-size: 24px;
     background-color: white;
     border: 1px solid black;
     padding: 5px;
-    margin: 15px;
-    width: 180px;
+    margin: 15px 0;
+    width: 360px;
 }
+
+#detail_price {
+    font-weight: bold;
+}
+
+.checkout {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#priceButton .btn{
+    margin: 20px 0 20px 20px;
+}
+
 
 hr {
     height: 1px;
@@ -50,6 +89,7 @@ hr {
 
 #shorthr {
     width: 50%;
+    margin: 60px;
 }
 
 img {
@@ -58,8 +98,18 @@ img {
 
 .product {
     padding: 10px ;
-    margin: 10px;
+    margin-top: 30px;
 }
+
+.product span {
+    font-size: 24px;
+}
+
+.product p {
+    font-size: 24px;
+    margin: 5px;
+}
+
 .product:hover {
     background-color: yellow;
     font-weight: bold;
@@ -75,21 +125,30 @@ img {
     border:solid;
     border-radius: 0.5px ;
     padding: 5px 20px;
-    margin: 15px;
-    box-sizing: border-box;
-    width: 120px;
+    margin-top: 20px;
+    width: 200px;
+    font-size: 24px;
 }
 
 .btn:hover {
     background-color: yellow;
-    font-weight: bold; /* mess up*/
+    font-weight: bold;
 }
 
-.nav_click a {
+nav {
+    margin-bottom: 60px;
+}
+
+nav h4{ /* between product & cart */
+    margin: 10px;
+    color: black;
+}
+
+nav a {
     text-decoration: none;
 }
 
-nav h4, .click a {
+.click a {
     color: black;
 }
 
@@ -102,3 +161,9 @@ nav h4:hover {
     text-align: center;
     margin-top: 40px;
 }
+
+.remove {
+    font-size: 15px;
+    margin: 5px;
+}
+
