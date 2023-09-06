@@ -16,7 +16,7 @@ hr {
 }
 
 img {
-    border: 1.5px solid black;
+    border: 2px solid black;
 }
 
 #logo {
@@ -27,3 +27,7 @@ img {
     margin: auto;
     width: 30% /* how to center the elements */
 }
+
+/* .Original {
+    margin: 100px, auto;
+} */
