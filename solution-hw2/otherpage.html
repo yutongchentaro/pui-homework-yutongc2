@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>Product Detail</title>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" >
+  
+  <body>
+    <!--logo-->
+    <div id="logo_click">
+      <a href="./index.html">
+        <img id="logo" src="../assets/logo/logo-01.svg" width="400"
+        alt="logo" />
+      </a>
+    </div>
+
+    <hr/>
+
+    <nav>
+      <!--product header-->
+      <div class="nav_click">
+        <a href="./index.html">
+          <h4 id="prod">PRODUCTS</h4>
+        </a>
+      </div>
+
+      <!--cart header-->
+      <div class="nav_click">
+        <a href="./otherpage2.html">
+          <h4 id="cart">CART</h4>
+        </a>
+      </div>
+    </nav>
+
+    <div class="mainContent">
+      <span class="largeText">Original cinnamon roll</span>
+      <div id="detail_img">
+        <img src="../assets/products/original-cinnamon-roll.jpg"
+          width="600"
+          height="600"
+          alt="original-cinnamon-roll" />
+      </div>
+
+      <div id="detail_content">
+        <p id="detail">Customize our delicious, hand-made cinnamon roll to your liking! </p>
+
+        <!--source: https://blog.hubspot.com/website/html-dropdown-->
+        <div id="detail_choice">
+          <div class="dropdown">
+            <label for="glazin">Glazing:</label>
+            <select name="glazin" id="glazin">
+              <option value="Keep original">Keep original</option>
+              <option value="Sugar milk">Sugar milk</option>
+              <option value="Vanilla milk">Vanilla milk</option>
+              <option value="Double chocolate">Double chocolate</option>
+            </select>
+          </div>
+
+          <div class="dropdown">
+            <label for="packs">Pack size:</label>
+            <select name="packs" id="packs">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+        
+
+          <div class="checkout">
+            <div id="detail_price">
+              <span>$2.49</span>
+            </div>
+  
+            <div id="priceButton">
+              <button class="btn" type="button">Add to Cart</button>
+            </div>
+          </div>
+
+          
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

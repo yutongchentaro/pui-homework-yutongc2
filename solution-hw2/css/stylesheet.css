@@ -1,0 +1,180 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+#logo {
+    border-width: 0;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+
+h4 { /* all titles*/
+    font-size: 32px;
+    font-weight: normal;
+}
+span, p {
+    font-size: 24px;
+}
+
+nav {
+    color:black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.mainContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.largeText {
+    font-weight: normal;
+    font-size: 32px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+
+}
+#detail_img {
+    margin-top: 40px;
+}
+
+#detail_content {
+    margin: 20px;
+    width: 360px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#detail {
+    margin-bottom: 60px;
+}
+
+.dropdown {
+    margin: 20px;
+}
+
+#glazin, #packs { /*dropdown*/
+    font-size: 24px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    width: 360px;
+}
+
+#detail_price {
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+.checkout {
+    display: flex;
+    align-items: center;
+    width: 380px;
+    justify-content: end;
+    margin-top: 100px;  
+}
+
+#priceButton .btn{
+    margin: 20px 0 20px 20px;
+}
+
+
+hr {
+    height: 1px;
+    border: solid;
+    background: black;
+
+
+}
+
+#shorthr {
+    width: 50%;
+    margin: 30px;
+}
+
+img {
+    border: 2px solid black;
+}
+
+.product {
+    padding: 10px ;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.product span {
+    font-size: 24px;
+}
+
+.product p {
+    font-size: 24px;
+    margin: 5px;
+}
+
+.product:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.product p {
+    font-weight: 100;
+}
+
+.btn {
+    border-color: black;
+    background-color: white;
+    border:solid;
+    border-radius: 0.5px ;
+    padding: 5px 20px;
+    margin-top: 20px;
+    width: 200px;
+    font-size: 24px;
+}
+
+.btn:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+nav {
+    margin-bottom: 60px;
+}
+
+nav h4{ /* between product & cart */
+    margin: 10px;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.click a {
+    color: black;
+}
+
+nav h4:hover {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.cart_item{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.remove {
+    font-size: 16px;
+    margin: 5px;
+}
+
