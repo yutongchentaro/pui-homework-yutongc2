@@ -34,7 +34,7 @@ nav {
 .largeText {
     font-weight: normal;
     font-size: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     margin-top: 60px;
 
 }
@@ -59,6 +59,7 @@ nav {
 .dropdown {
     margin: 20px;
 }
+
 #glazin, #packs { /*dropdown*/
     font-size: 24px;
     background-color: white;
@@ -78,7 +79,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 #priceButton .btn{
     margin: 20px 0 20px 20px;
@@ -95,7 +96,7 @@ hr {
 
 #shorthr {
     width: 50%;
-    margin: 60px;
+    margin: 30px;
 }
 
 img {
@@ -167,10 +168,11 @@ nav h4:hover {
 .cart_item{
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .remove {
-    font-size: 15px;
+    font-size: 16px;
     margin: 5px;
 }
 
