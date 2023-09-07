@@ -4,6 +4,9 @@
 
 #logo {
     border-width: 0;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    margin-left: 30px;
 }
 
 h4 { /* all titles*/
@@ -31,7 +34,7 @@ nav {
 .largeText {
     font-weight: normal;
     font-size: 32px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     margin-top: 60px;
 
 }
@@ -49,31 +52,33 @@ nav {
 
 }
 
-#detail_choice {
-    float: right;
+#detail {
+    margin-bottom: 60px;
 }
 
 .dropdown {
-    font-size: 24px;
+    margin: 20px;
 }
-
 #glazin, #packs { /*dropdown*/
     font-size: 24px;
     background-color: white;
     border: 1px solid black;
     padding: 5px;
-    margin: 15px 0;
+    margin: 10px 0;
     width: 360px;
 }
 
 #detail_price {
     font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .checkout {
     display: flex;
     align-items: center;
     justify-content: end;
+    margin-top: 80px;
 }
 #priceButton .btn{
     margin: 20px 0 20px 20px;
@@ -84,6 +89,7 @@ hr {
     height: 1px;
     border: solid;
     background: black;
+
 
 }
 
@@ -99,6 +105,7 @@ img {
 .product {
     padding: 10px ;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .product span {
