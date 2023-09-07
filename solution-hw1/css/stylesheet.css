@@ -71,16 +71,18 @@ nav {
 
 #detail_price {
     font-weight: bold;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-right: 30px;
 }
 
 .checkout {
     display: flex;
     align-items: center;
+    width: 380px;
     justify-content: end;
-    margin-top: 100px;
+    margin-top: 100px;  
 }
+
 #priceButton .btn{
     margin: 20px 0 20px 20px;
 }
