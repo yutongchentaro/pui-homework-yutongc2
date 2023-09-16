@@ -5,49 +5,64 @@
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css" >
   
   <body>
-    <!--logo-->
-    <div id="logo_click">
-      <a href="./index.html">
-        <img id="logo" src="../assets/logo/logo-01.svg" width="400"
-        alt="logo" />
-      </a>
+
+    <!-- all content on the top -->
+    <div class="top">
+      
+      <!--logo-->
+      <div id="logo_click">
+        <a href="./index.html">
+          <img id="logo" src="../assets/logo/logo-01.svg" width="400"
+          alt="logo" />
+        </a>
+      </div>
+
+      <div id="exceptLogo">
+        <!--navigation bar-->
+        <nav>
+          <!--product-->
+          <div id="nav_products">
+            <a href="./index.html">
+              <h4 id="prod">PRODUCTS</h4>
+            </a>
+          </div>
+    
+          <!--cart-->
+          <div id="nav_cart">
+            <a href="./otherpage2.html">
+              <h4 id="cart">CART</h4>
+            </a>
+          </div>
+        </nav>
+
+      <div id="hr">
+        <hr/>
+      </div>
+
+      <p class="contentTitle">Original cinnamon roll</p>
+
+      </div>
+
+
     </div>
 
-    <hr/>
-
-    <nav>
-      <!--product header-->
-      <div class="nav_click">
-        <a href="./index.html">
-          <h4 id="prod">PRODUCTS</h4>
-        </a>
-      </div>
-
-      <!--cart header-->
-      <div class="nav_click">
-        <a href="./otherpage2.html">
-          <h4 id="cart">CART</h4>
-        </a>
-      </div>
-    </nav>
-
     <div class="mainContent">
-      <span class="largeText">Original cinnamon roll</span>
-      <div id="detail_img">
+
+      <div id="detail_img"> <!-- left side, img section-->
         <img src="../assets/products/original-cinnamon-roll.jpg"
           width="600"
           height="600"
           alt="original-cinnamon-roll" />
       </div>
 
-      <div id="detail_content">
+      <div id="detail_content"> <!-- right side, info section-->
         <p id="detail">Customize our delicious, hand-made cinnamon roll to your liking! </p>
 
         <!--source: https://blog.hubspot.com/website/html-dropdown-->
         <div id="detail_choice">
           <div class="dropdown">
             <label for="glazin">Glazing:</label>
-            <select name="glazin" id="glazin">
+            <select name="glazin" class="selection">
               <option value="Keep original">Keep original</option>
               <option value="Sugar milk">Sugar milk</option>
               <option value="Vanilla milk">Vanilla milk</option>
@@ -57,7 +72,7 @@
 
           <div class="dropdown">
             <label for="packs">Pack size:</label>
-            <select name="packs" id="packs">
+            <select name="packs" class="selection">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
@@ -68,7 +83,7 @@
 
           <div class="checkout">
             <div id="detail_price">
-              <span>$2.49</span>
+              <p>$2.49</p>
             </div>
   
             <div id="priceButton">
