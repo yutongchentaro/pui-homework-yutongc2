@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
   <title>Product Detail</title>
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css" >
+  <script src="js/javascript.js" defer></script>
   
   <body>
 
@@ -62,28 +63,37 @@
         <div id="detail_choice">
           <div class="dropdown">
             <label for="glazin">Glazing:</label>
+            <select id="glazin" onchange="calculate()">
+            </select>
+            <!--
             <select name="glazin" id="glazin">
               <option value="Keep original">Keep original</option>
               <option value="Sugar milk">Sugar milk</option>
               <option value="Vanilla milk">Vanilla milk</option>
               <option value="Double chocolate">Double chocolate</option>
             </select>
+            -->
+
           </div>
 
           <div class="dropdown">
             <label for="packs">Pack size:</label>
+            <select id="packs" onchange = "calculate()">
+            </select>
+            <!--
             <select name="packs" id="packs">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
               <option value="12">12</option>
             </select>
+            -->
           </div>
         
 
           <div class="checkout">
             <div id="detail_price">
-              <p>$2.49</p>
+              <p id="totalPrice">$2.49</p>
             </div>
   
             <div id="priceButton">
