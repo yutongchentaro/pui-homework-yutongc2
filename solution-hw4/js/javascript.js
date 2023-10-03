@@ -4,20 +4,21 @@ const queryString = window.location.search;
 //console.log(queryString);
 const params = new URLSearchParams(queryString);
 const rollType = params.get("roll");
-//console.log(rollType);
+console.log(rollType);
+
 
 
 let eachImg = rolls[rollType]["imageFile"];
-//console.log(basePrice);
+console.log(eachImg);
 
 const headerElement = document.querySelector("#detailTitle");
 headerElement.innerText = rollType + " Cinnamon Roll";
 
 const rollImage = document.querySelector("#imgDetail");
 rollImage.src = "../assets/products/" + eachImg;
-//console.log(rollImage.src);
+console.log(rollImage.src);
 
-rollImage.alt = rollType + "Cinnamon Roll";
+rollImage.alt = rollType + " Cinnamon Roll";
 
 
 
