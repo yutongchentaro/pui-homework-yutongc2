@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>Product Detail</title>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" >
+  <script src="js/rollsData.js" defer></script>
+  <script src="js/javascript.js" defer></script>
+
+  
+  <body>
+
+    <!-- all content on the top -->
+    <div class="top">
+      
+      <!--logo-->
+      <div id="logo_click">
+        <a href="./index.html">
+          <img id="logo" src="../assets/logo/logo-01.svg" width="400"
+          alt="logo" />
+        </a>
+      </div>
+
+      <div id="exceptLogo">
+        <!--navigation bar-->
+        <nav>
+          <!--product-->
+          <div id="nav_products">
+            <a href="./index.html">
+              <h4 id="prod">PRODUCTS</h4>
+            </a>
+          </div>
+    
+          <!--cart-->
+          <div id="nav_cart">
+            <a href="./cart.html">
+              <h4 id="cart">CART</h4>
+            </a>
+          </div>
+        </nav>
+
+      <div id="hr">
+        <hr/>
+      </div>
+
+      <p class="contentTitle" id="detailTitle">Original cinnamon roll</p>
+
+      </div>
+
+
+    </div>
+
+    <div class="mainContent">
+
+      <div id="detail_img"> <!-- left side, img section-->
+        <img id="imgDetail"
+          src="../assets/products/original-cinnamon-roll.jpg"
+          width="600"
+          height="600"
+          alt="original-cinnamon-roll" />
+      </div>
+
+      <div id="detail_content"> <!-- right side, info section-->
+        <p id="detail">Customize our delicious, hand-made cinnamon roll to your liking! </p>
+
+        <!--source: https://blog.hubspot.com/website/html-dropdown-->
+        <div id="detail_choice">
+          <div class="dropdown">
+            <label for="glazin">Glazing:</label>
+            <select id="glazin" onchange="calculate()">
+            </select>
+            <!--
+            <select name="glazin" id="glazin">
+              <option value="Keep original">Keep original</option>
+              <option value="Sugar milk">Sugar milk</option>
+              <option value="Vanilla milk">Vanilla milk</option>
+              <option value="Double chocolate">Double chocolate</option>
+            </select>
+            -->
+
+          </div>
+
+          <div class="dropdown">
+            <label for="packs">Pack size:</label>
+            <select id="packs" onchange = "calculate()">
+            </select>
+            <!--
+            <select name="packs" id="packs">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+            -->
+          </div>
+        
+
+          <div class="checkout">
+            <div id="detail_price">
+              <p id="totalPrice">$2.49</p>
+            </div>
+  
+            <div>
+              <button class="btn" type="button" id="priceButton">Add to Cart</button>
+            </div>
+          </div>
+
+          
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
