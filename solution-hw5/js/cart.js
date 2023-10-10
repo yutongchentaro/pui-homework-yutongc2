@@ -10,6 +10,12 @@ let glazingAdaption = [
     {option:"Vanilla Milk", add: 0.50}, 
     {option:"Double Chocolate", add: 1.50} ];
 
+let packsPrice = [
+    {size:"1", adaption:1},
+    {size:"3", adaption: 3},
+    {size:"6", adaption: 5},
+    {size:"12", adaption: 10} ];
+
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
         this.type = rollType;
@@ -44,22 +50,9 @@ let raisinRoll = new Roll("Raisin", "Sugar Milk", "3", 2.99);
 let appleRoll = new Roll("Apple", "Original", "3", 3.49);
 
 shoppingCart.push(originalRoll, walnutRoll, raisinRoll, appleRoll);
-console.log(shoppingCart);
+//console.log(shoppingCart);
 
 
-
-
-let glazingPrice = [ 
-    {option:"Keep original", add: 0.00}, 
-    {option:"Sugar milk", add: 0.00}, 
-    {option:"Vanilla milk", add: 0.50}, 
-    {option:"Double chocolate", add: 1.50} ];
-
-let packsPrice = [
-    {size:"1", adaption:1},
-    {size:"3", adaption: 3},
-    {size:"6", adaption: 5},
-    {size:"12", adaption: 10} ];
 
 
 for (let i = 3; i >= 0; i--) {
@@ -120,7 +113,7 @@ function deleteRoll(newRoll) {
     checkout.innerText = "$" + total.toFixed(2);
 }
 
-checkout.innerText = "$" + total.toFixed(2); // questions!!
+checkout.innerText = "$" + total.toFixed(2); //changed what I assigned in the previous html
 
 
 
