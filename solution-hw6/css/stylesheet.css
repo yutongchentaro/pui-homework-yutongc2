@@ -1,0 +1,283 @@
+* {
+    font-family: Helvetica, Arial,  Tahoma, sans-serif;  
+}
+
+.top {
+    display: flex;
+    align-items: flex-start;
+}
+
+#exceptLogo {
+    flex: 1;
+    width: 100%;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+
+
+#logo {
+    border-width: 0;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+
+hr {
+    height: 1px;
+    border: solid;
+    background: black;
+}
+
+#hr { /*long hr*/
+    width: 100%;
+}
+
+
+p { /* standard font size*/
+    font-size: 24px;
+}
+
+nav {
+    color:black;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end; /* to the end */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+nav h4{ 
+    color: black;
+    font-size: 28px;      /*large text*/
+    font-weight: normal;
+}
+
+#prod {
+    width: 160px;
+    margin-right: 20px;
+}
+
+#cart {
+    width: 80px;
+    margin-left: 60px;
+    margin-right: 70px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+nav h4:hover {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.contentTitle {         
+    font-weight: normal;
+    font-size: 32px;             /*larger text*/
+    margin-bottom: 50px;
+    margin-top: 60px;
+
+}
+
+/*style for all images*/
+img { 
+    border: 3px solid black;
+}
+
+/*style for all buttons*/
+.btn {
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 0.5px ;
+    padding: 8px 20px;         /* 8px padding for btn and dropdown */
+    width: 200px;
+    font-size: 24px;
+}
+
+.btn:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+/* css for index.html*/
+.mainContent {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1100px;
+    justify-content:center;
+    align-items: flex-start;
+    margin: auto; /*put it in the center of the page*/
+    margin-top: 8px; /* distance from the title */
+}
+
+.product {
+    width: 290px; /* add width for each box */
+    padding: 5px ;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 50px;
+}
+
+
+.product p {
+    margin: 5px;
+    font-weight: 100;
+}
+
+.product span { /*product names*/
+    font-size: 26px;
+}
+
+.product:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.click a {
+    color: black;
+}
+
+
+
+
+/* css for otherpage.html*/
+#detail_img {
+    margin-right: 20px;
+}
+
+#detail_content {
+    width: 320px; /*standard width for left side*/
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#detail { /*between words and dropdown*/
+    margin-bottom: 30px;
+}
+
+#detail_choice {
+    width: 320px; /*standard width for left side*/
+}
+
+.dropdown {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+#glazin, #packs  { /*dropdown selection*/
+    width: 320px; /*standard width for left side*/
+    font-size: 24px;
+    background-color: white;
+    border: 3px solid black;
+    padding: 8px;             /* 8px padding for btn and dropdown */
+    margin: 10px 0;
+}
+
+#detail_price {
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 12px;
+}
+
+.checkout {
+    width: 320px; /*standard width for left side*/
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 80px;  
+}
+
+#priceButton{
+    margin: 20px 0 20px 20px;
+}
+
+
+/* css for otherpage2.html*/
+.shoppingCart {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 800px;
+    margin-top: 8px; /* distance from the title */
+    margin-right: 50px;
+    margin-left:450px;
+}
+
+
+.cart_item{
+    display:flex;
+    flex-direction: row;
+    align-items: start;
+    width: 660px;
+    margin: 5px 0 0 0;
+}
+
+.remove {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cart_info {
+    display:flex;
+    align-items: center;
+    justify-content: space-between; /* !!!!!! help */
+    line-height: 2;
+    margin-top: 5px;
+    margin-left: 40px;
+
+}
+
+.cart_info p, .price_info p, #checkout p{
+    font-size: 20px; 
+}
+
+.cart_text {
+    width: 300px;
+    margin-right: 40px;
+}
+
+.cart_text p { /*newly added*/
+    margin: 2px;
+}
+
+.cart_price {
+    margin-left: 20px;
+    font-size: 20px; 
+}
+
+
+#shorthr {  /*short hr*/
+    width: 660px; /*same as shopping cart*/
+    margin: 0;
+}
+
+#checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 660px;
+}
+
+#price_info {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+}
+
+#checkout .btn{  /* unify with the other button or customized*/
+    margin: 0;
+    padding: 18px 5px 18px 5px;
+    font-size: 20px;
+    width: 140px
+}

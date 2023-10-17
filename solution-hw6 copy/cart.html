@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" >
+  <script src="js/rollsData.js" defer></script>
+  <script src="js/cart.js" defer></script>
+
+  
+  <body>
+    <!-- all content on the top -->
+    <div class="top">
+      
+      <!--logo-->
+      <div id="logo_click">
+        <a href="./index.html">
+          <img id="logo" src="../assets/logo/logo-01.svg" width="400"
+          alt="logo" />
+        </a>
+      </div>
+
+      <div id="exceptLogo">
+        <!--navigation bar-->
+        <nav>
+          <!--product-->
+          <div id="nav_products">
+            <a href="./index.html">
+              <h4 id="prod">PRODUCTS</h4>
+            </a>
+          </div>
+    
+          <!--cart-->
+          <div id="nav_cart">
+            <a href="./cart.html">
+              <h4 id="cart">CART</h4>
+            </a>
+          </div>
+        </nav>
+
+      <div id="hr">
+        <hr/>
+      </div>
+
+      <p class="contentTitle">Shopping cart</p>
+
+      </div>
+
+    </div>
+
+    <div class="shoppingCart">
+
+      <div id="rollCartList">
+
+        <template id="roll-template">
+
+          <div class="cart_item">
+            <div>
+              <img class="rollImage" src="../assets/products/original-cinnamon-roll.jpg"
+              width="200"
+              height="200"
+              alt="original-cinnamon-roll" 
+              />
+              <p class="remove">Remove</p>
+            </div>
+    
+            <div class="cart_info"> 
+              <div class="cart_text">
+                <p class="rollName">Original Cinnamon Roll</p>
+                <p class="rollGlazing">Glazing: Keep original</p>
+                <p class="rollPack">Pack Size: 1</p>
+              </div>
+    
+              <div class="cart_price">
+                <p>$2.49</p>
+              </div>
+            </div>
+    
+    
+          </div>
+    
+          <!-- <div class="cart_item">
+            <div>
+              <img src="../assets/products/double-chocolate-cinnamon-roll.jpg"
+              width="200"
+              height="200"
+              alt="double-chocolate-cinnamon-roll" />
+              <p class="remove">Remove</p>
+            </div>
+    
+            <div class="cart_info"> 
+              <div class="cart_text">
+                <p>Double Chocolate Cinnamon Roll <br> Glazing: Sugar milk <br> Pack Size: 6</p> 
+              </div>
+    
+              <div class="price">
+                <p>$27.45<p>
+              </div>
+            </div>
+    
+          </div> -->
+        </template>
+  
+  
+  
+
+      </div>
+      
+
+      <hr id="shorthr"/>
+
+      <div id="checkout">
+        <div id="price_info">
+          <div>
+            <p>Total</p>
+          </div>
+
+          <div>
+            <p id="cartTotalPrice">$29.94</p>
+          </div>
+        </div>
+
+        <button class="btn" type="button">Checkout</button>
+      </div>
+      
+    </div>
+
+
+  </body>
+</html>
