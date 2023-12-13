@@ -393,8 +393,6 @@ let answerText = document.getElementById("ansText");
 
 
 
-// let findButton = document.getElementById("startButton");
-// findButton.addEventListener("click", generateAnswer);
 
 
 function storeAns() {
@@ -404,6 +402,53 @@ function storeAns() {
 
 const storedAns = localStorage.getItem("answer");
 answerText.textContent = storedAns.charAt(0) + storedAns.substring(1).toLowerCase();
+
+
+//source: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage
+
+
+// function generateImg() {
+
+//     const ansCanvas = document.getElementById("canvas");
+//     const ctx = ansCanvas.getContext("2d"); 
+
+
+//     const ansImage = new Image();
+//     ansImage.onload = function () {
+
+//         ansCanvas.width = img.width;
+//         ansCanvas.height = img.height;
+
+//         ctx.drawImage(ansImage, 0, 0, canvas.width, canvas.height);
+
+//         ctx.font = "42px Seaweed Script";
+//         ctx.fillStyle = "white";
+//         ctx.fillText(answerText.textContent,50,50);
+
+//     };
+
+//     ansImage.src = "./assets/paper.png";
+
+// }
+
+// function downloadImg() {
+//     const ansCanvas = document.getElementById("canvas");
+//     ansCanvas.toBlob(function(blob) {
+//         const link = document.createElement("a");
+//         link.href = URL.createObjectURL(blob);
+//         link.download = "YourAnswer.png";
+//         link.click();
+//     });
+// }
+
+// let generateButton = document.getElementById("startButton");
+// generateButton.addEventListener("click", generateImg);
+
+// let downloadButton = document.getElementById("shareButton");
+// downloadButton.addEventListener("click", downoadImg);
+
+
+
 
 
 

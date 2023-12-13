@@ -117,24 +117,38 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width:100%;
     
 }
 
-
-
 #answerPaper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
 }
 
-#answerImg {
-;
+#answerText {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    height: 600px;
+    margin: 2%;
+    background-image: url("../assets/answerbackground.png");
+    background-size: 800px;  
+    background-repeat: no-repeat;
+
 }
+
 
 #ansText{
     font-family: 'Seaweed Script';
-    font-size: 42px;
+    font-size: 48px;
     color: black;
+    letter-spacing: 1px;
+    margin-top: 25%;
+    width: 50%;
 
 }
 
