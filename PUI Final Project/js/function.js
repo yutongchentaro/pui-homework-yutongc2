@@ -353,11 +353,12 @@ let img;
 let skyimg;
 let backimg;
 let canvas;
-
+let zodiac;
 
 function preload() {
     img = loadImage('assets/featherPen.png');
     skyimg = loadImage('assets/sky.jpg');
+    zodiac = loadImage('assets/zodiac.png');
 }
 
 function windowResized() {
@@ -372,6 +373,20 @@ function setup() {
 
 }
   
+
+function draw() {
+    // Translate to the center of the canvas
+  translate(width / 2, height / 2);
+
+  // Rotate the image continuously
+  rotate(radians(frameCount));
+
+    // Display the rotated image
+    imageMode(CENTER);
+    image(zodiac, 0, 0, 100, 100); 
+}
+
+
 function draw() {
     background(skyimg);
     fill(7, 19, 37, 180-mouseX/3); //blue
@@ -379,9 +394,8 @@ function draw() {
     fill(25, 13, 49, 180-mouseY/3); //purple
     rect(0, 0, width, height);
     image(img,mouseX-15,mouseY-110,(mouseY-mouseX)/6);
+
 }
-
-
 
 
 
@@ -393,8 +407,6 @@ let answerText = document.getElementById("ansText");
 
 
 
-
-
 function storeAns() {
     const randomAns = answers[Math.floor(Math.random() * answers.length)];
     localStorage.setItem("answer", randomAns);
@@ -402,6 +414,11 @@ function storeAns() {
 
 const storedAns = localStorage.getItem("answer");
 answerText.textContent = storedAns.charAt(0) + storedAns.substring(1).toLowerCase();
+
+
+
+
+
 
 
 //source: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage
@@ -446,20 +463,5 @@ answerText.textContent = storedAns.charAt(0) + storedAns.substring(1).toLowerCas
 
 // let downloadButton = document.getElementById("shareButton");
 // downloadButton.addEventListener("click", downoadImg);
-
-
-
-
-
-
-
-
-// const musicPlaying = sessionStorage.getItem('musicPlaying') === 'true'; //not working
-
-// if (!musicPlaying) {
-//     const bgm = document.getElementById('bgm1');
-//     bgm.play();
-//     sessionStorage.setItem('musicPlaying', 'true');
-// }
 
 
