@@ -400,8 +400,6 @@ function draw() {
 
 
 
-// let backgroundMusic_1 = document.getElementById("bgm1");
-// backgroundMusic_1.play();
 
 let answerText = document.getElementById("ansText");
 
@@ -416,7 +414,16 @@ const storedAns = localStorage.getItem("answer");
 answerText.textContent = storedAns.charAt(0) + storedAns.substring(1).toLowerCase();
 
 
+//not working
+// var audio = document.getElementById("bgm1");
 
+// function playAudio() {
+//     audio.play();
+// }
+
+// function pauseAudio() {
+//     audio.pause();
+// }
 
 
 

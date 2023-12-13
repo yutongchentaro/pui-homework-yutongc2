@@ -22,133 +22,141 @@ nav a {
     color: #FFCE51;
 
 }
+
+
+
 /* mainpage */
 
-#title {
-    font-size: 128px;
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
 
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    /* margin-bottom: 15px;
-    margin-top: 15px; */
-    margin-right:15px;
-    font-size: 24px;
-    position: fixed;
-    top:0;
-}
-
-.navbtn {
-    margin: 15px;
-}
-
-
-#arrow {
-    display: flex;
-    justify-content: center;
-}
-
-#startButton, #shareButton, #againButton {      /* class not working */
-    font-family: 'Abhaya Libre SemiBold', sans-serif;  
-    font-size: 24px;
-    padding:16px 14px 12px 14px;
-    border: none;
-    border-radius: 8px;
-    color: #071325;   
-}
-
-#startButton, #shareButton {
-    background-color: #F6B100;  
-}
-
-#startButton:hover, #shareButton:hover {
-    background-color: #FFE5A1;
-}
-
-#againButton {
-    background-color:#ADD7FF;
-}
-
-#againButton:hover {
-    background-color:#5EA8FF;
-}
-
-
-.btn {
-    display: flex;
-    justify-content: center;
-    margin: 2%;
-}
-
-
-/* description */
-.header {
-    display: flex;
-    justify-content: center;
-    font-size: 48px;
-}
-
-.bodyPara {
-    display: flex;
-    flex-direction: column;
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: 24px;   
-    line-height: 130%;
-}
-
-
-
-
-/* disclaimer */
-.reference a {
-    color: #FFCE51;
-}
-
-/* answer */
-#twobtns {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width:100%;
+@media (min-width: 300px){
+    #title {
+        font-size: 128px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
     
-}
-
-#answerPaper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    }
     
-}
-
-#answerText {
-    display: flex;
-    justify-content: center;
-    width: 55%;
-    height: 600px;
-    margin: 2%;
-    background-image: url("../assets/answerbackground.png");
-    background-size: 800px;  
-    background-repeat: no-repeat;
-
-}
-
-
-#ansText{
-    font-family: 'Seaweed Script';
-    font-size: 48px;
-    color: black;
-    letter-spacing: 1px;
-    margin-top: 25%;
-    width: 50%;
+    nav {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        /* margin-bottom: 15px;
+        margin-top: 15px; */
+        margin-right:15px;
+        font-size: 24px;
+        position: fixed;
+        top:0;
+    }
+    
+    .navbtn {
+        margin: 15px;
+    }
+    
+    
+    #arrow {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #startButton, #shareButton, #againButton {      /* class not working */
+        font-family: 'Abhaya Libre SemiBold', sans-serif;  
+        font-size: 24px;
+        padding:16px 14px 12px 14px;
+        border: none;
+        border-radius: 8px;
+        color: #071325;   
+    }
+    
+    #startButton, #shareButton {
+        background-color: #F6B100;  
+    }
+    
+    #startButton:hover, #shareButton:hover {
+        background-color: #FFE5A1;
+    }
+    
+    #againButton {
+        background-color:#ADD7FF;
+    }
+    
+    #againButton:hover {
+        background-color:#5EA8FF;
+    }
+    
+    
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin: 2%;
+    }
+    
+    
+    /* description */
+    .header {
+        display: flex;
+        justify-content: center;
+        font-size: 48px;
+    }
+    
+    .bodyPara {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 24px;   
+        line-height: 130%;
+    }
+    
+    
+    
+    
+    /* disclaimer */
+    .reference a {
+        color: #FFCE51;
+    }
+    
+    /* answer */
+    #twobtns {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:100%;
+        
+    }
+    
+    #answerPaper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    #answerText {
+        display: flex;
+        justify-content: center;
+        width: 55%;
+        height: 600px;
+        margin: 2%;
+        background-image: url("../assets/answerbackground.png");
+        background-size: 800px;  
+        background-repeat: no-repeat;
+    
+    }
+    
+    
+    #ansText{
+        font-family: 'Seaweed Script';
+        font-size: 48px;
+        color: black;
+        letter-spacing: 1px;
+        margin-top: 25%;
+        width: 50%;
+    
+    }
+    
 
 }
 
