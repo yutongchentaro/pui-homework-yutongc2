@@ -6,6 +6,8 @@
 
 html,body {
     overflow-y: scroll; 
+    height: 100%;
+    margin: 0;
 }
 
 body {
@@ -126,6 +128,13 @@ nav {
 }
 
 #answerImg {
+;
+}
+
+#ansText{
+    font-family: 'Seaweed Script';
+    font-size: 42px;
+    color: black;
 
 }
 

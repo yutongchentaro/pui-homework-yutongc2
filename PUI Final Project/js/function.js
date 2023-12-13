@@ -381,27 +381,40 @@ function draw() {
     image(img,mouseX-15,mouseY-110,(mouseY-mouseX)/6);
 }
 
-let findButton = document.getElementById("startButton");
+
+
+
+
+
+// let backgroundMusic_1 = document.getElementById("bgm1");
+// backgroundMusic_1.play();
+
 let answerText = document.getElementById("ansText");
-let backgroundMusic_1 = document.getElementById("bgm1");
-backgroundMusic_1.play();
 
-function generateAnswer() {
+
+
+// let findButton = document.getElementById("startButton");
+// findButton.addEventListener("click", generateAnswer);
+
+
+function storeAns() {
     const randomAns = answers[Math.floor(Math.random() * answers.length)];
-    answerText.textContent = randomAns;
-    return randomAns;
-    console.log(randomAns);
+    localStorage.setItem("answer", randomAns);
 }
 
-findButton.addEventListener("click", generateAnswer);
+const storedAns = localStorage.getItem("answer");
+answerText.textContent = storedAns.charAt(0) + storedAns.substring(1).toLowerCase();
 
 
-const musicPlaying = sessionStorage.getItem('musicPlaying') === 'true'; //not working
 
-if (!musicPlaying) {
-    const bgm = document.getElementById('bgm1');
-    bgm.play();
-    sessionStorage.setItem('musicPlaying', 'true');
-}
+
+
+// const musicPlaying = sessionStorage.getItem('musicPlaying') === 'true'; //not working
+
+// if (!musicPlaying) {
+//     const bgm = document.getElementById('bgm1');
+//     bgm.play();
+//     sessionStorage.setItem('musicPlaying', 'true');
+// }
 
 
